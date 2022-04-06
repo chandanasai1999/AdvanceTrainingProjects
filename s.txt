@@ -1,0 +1,434 @@
+myPortfolio: Easy Way to Create Your Amazing Portfolio.Source Code
+----------------------------------------------------------------------------
+
+
+TS app-routing.module.ts
+------------------------------------------
+
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+
+-------------------------------------
+
+<> app.component.html
+------------------------------------------
+
+<div class="mainDiv">
+  <div class="topDiv">
+    <h1 class="title">Porfolio</h1>
+  </div>
+  <div class="contentAreaDiv">
+    <section class="socialDiv">
+      <p>My name is Munagapati Chandana Sai!</p>
+      <div class="icon">
+        <span><a href="https://photo.com/"><img src="../assets/PHOTO.jpeg" alt="My Photo icon"></a></span>
+        <span><a href="https://github.com/"><img src="../assets/git.png" alt="github icon"></a></span>
+        <span><a href="https://Twitch.com/"><img src="../assets/Twitch.png" alt="Twitch Icon"></a></span>
+      </div>
+    </section>
+    <section class="mainContentDiv">
+      <div class="summaryDiv">
+        <div style="display: flex; flex-direction: row;">
+          <hr>
+          <p style="font-size: large;">Summary</p>
+          <hr>
+         </div>
+         <p>To build a successful career in the field of Information Technology, where I could improve my knowledge, capabilities and put them to use for the development of the organization.</p>
+      </div>
+      <div class="resumeDiv">
+        <div style="display: flex; flex-direction: row;">
+          <hr>
+          <p style="font-size: large;">Resume</p>
+          <hr>
+         </div>
+         <p>link to resume!</p>
+      </div>
+      <div class="projectDiv">
+        <div style="display: flex; flex-direction: row;">
+          <hr>
+          <p style="font-size: large;">Projects</p>
+          <hr>
+         </div>
+      </div>
+      <div class="projectsDiv">
+        <mat-card class="project">
+          Project 1 - Ming's Diner
+          <ul>
+            <li>HTML,CSS</li>
+            <li>Miner 5GB/day</li>
+            <li>Runs on LocalHost</li>
+          </ul>
+          <button mat-raised-button>To Source Code</button>
+        </mat-card>
+        <mat-card class="project">
+          Project 1 - Ecommerce
+          <ul>
+            <li>MYSQL,Hibernate</li>
+            <li>Miner 2GB/day</li>
+            <li>Runs on JavaServer</li>
+          </ul>
+          <button mat-raised-button>To Source Code</button>
+        </mat-card>
+        <mat-card class="project">
+          Project 1 - VirtualKey
+          <ul>
+            <li>CoreJava</li>
+            <li>Miner 1GB/day</li>
+            <li>Runs on JavaApplication</li>
+          </ul>
+          <button mat-raised-button>To Source Code</button>
+        </mat-card>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+-----------------------------------------------------------------
+
+
+$  app.component.scss
+-------------------------------------------
+
+.mainDiv{
+    height: 100%;
+    width: 100%;
+  
+    p{
+      color: var(--primary-color);
+      text-align: center;
+    }
+  
+    .topDiv{
+      display: flex;
+      height: 82.5px;
+      width: 100%;
+      justify-content: center;
+      box-shadow: 0 8px 6px -6px #7d4446;
+  
+      .title{
+        font-size: 56px;
+        margin-top: 35px;
+        color: var(--primary-color);
+        text-shadow: 1px 1px 10px var(--primary-shadow), 1px 1px 10px var(--primary-shadow);
+      }
+  
+    }
+  
+    .contentAreaDiv{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+  
+      .socialDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+        text-align: center;
+  
+        .icon{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+  
+          img{
+            width: 67px;
+          }
+  
+          img:hover{
+            filter: invert(27%)
+                    sepia(51%)
+                    saturate(2878%)
+                    hue-rotate(346deg)
+                    brightness(104%)
+                    contrast(97%);
+          }
+  
+        }
+      }
+  
+      .mainContentDiv{
+        background-color: var(--background-secondary);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        padding-top: 20px;
+  
+  
+  
+        hr{
+          background-color: var(--secondary-color);
+          height: 1px;
+          border: none;
+          width: 100%;
+        }
+  
+        .projectsDiv{
+  
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+  
+          .project{
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            width: 200px;
+            height: auto;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+  
+            button{
+              background-color: var(--background-main);
+              color: var(--primary-color);
+            }
+  
+          }
+  
+        }
+  
+       }
+  
+    }
+  
+    @media only screen and (min-width: 1080px){
+  
+      .contentAreaDiv{
+        flex-direction: row;
+  
+        .socialDiv{
+          justify-content: flex-start;
+          width: 15%;
+          padding-top: 5%;
+  
+          .icon{
+            flex-direction: column;
+          }
+  
+        }
+  
+  
+  
+  
+  
+  
+      }
+  
+      .topDiv{
+        position: relative;
+      }
+  
+  
+  
+    }
+  
+  }
+  
+  -------------------------------------------------------
+  
+  
+  TS app.component.spec.ts
+  ------------------------------------
+  
+  import { TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { AppComponent } from './app.component';
+
+describe('AppComponent', () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [
+        RouterTestingModule
+      ],
+      declarations: [
+        AppComponent
+      ],
+    }).compileComponents();
+  });
+
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
+
+  it(`should have as title 'portfolio-live'`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('portfolio-live');
+  });
+
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('.content span')?.textContent).toContain('portfolio-live app is running!');
+  });
+});
+
+
+--------------------------------------------------------------
+
+TS  app.component.ts
+
+------------------------------
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+  title = 'portfolio-live';
+}
+
+
+
+---------------------------------------------------------
+
+
+TS app.module.ts
+-------------------------
+
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NoopAnimationsModule,
+    MatButtonModule,
+    MatCardModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+----------------------------------------------------
+
+
+
+<> index.html
+------------------------------------
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PortfolioLive</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="mat-typography">
+  <app-root></app-root>
+</body>
+</html>
+
+
+
+----------------------------------------------------------
+
+
+
+TS main.ts
+-------------------------------------------
+
+import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { AppModule } from './app/app.module';
+import { environment } from './environments/environment';
+
+if (environment.production) {
+  enableProdMode();
+}
+
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
+
+
+
+--------------------------------------------------------------------------
+$  styles.scss
+
+html, body { height: 100%; }
+body { 
+    
+    --primary-color: #78d0cf;
+    --background-main: #141414;
+    --background-secondary: #1b1b1b;
+    --secondary-color: #7d4446;
+    --primary-shadow: #18505d;
+
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-color: var(--background-main);
+}
+
+
+-----------------------------------------------------
+
+TS test.ts
+
+
+
+// This file is required by karma.conf.js and loads recursively all the .spec and framework files
+
+import 'zone.js/testing';
+import { getTestBed } from '@angular/core/testing';
+import {
+  BrowserDynamicTestingModule,
+  platformBrowserDynamicTesting
+} from '@angular/platform-browser-dynamic/testing';
+
+declare const require: {
+  context(path: string, deep?: boolean, filter?: RegExp): {
+    <T>(id: string): T;
+    keys(): string[];
+  };
+};
+
+// First, initialize the Angular testing environment.
+getTestBed().initTestEnvironment(
+  BrowserDynamicTestingModule,
+  platformBrowserDynamicTesting(),
+);
+
+// Then we find all the tests.
+const context = require.context('./', true, /\.spec\.ts$/);
+// And load the modules.
+context.keys().map(context);
+----------------------------------------------------
+
+

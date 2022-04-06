@@ -1,0 +1,46 @@
+Building A Restaurant Website With Bootstrap.
+
+------------------------------------------------
+
+DESCRIPTION
+------------------------
+
+Project objective: 
+----------------------------------
+
+Build a responsive website for a restaurant where users can read the details of the restaurant.’
+
+
+Background of the problem statement: 
+------------------------------------------
+
+You are a web developer at a service-based web development company called Kite Technologies. The company has been approached by a client who wants to build a website for their restaurant named Ming’s Diner. The website should provide the users a brief overview of the restaurant and its bestsellers, its address, as well as an option to contact the restaurant. During sprint planning, you agree to lead this project and develop the website. 
+
+
+The tasks you are responsible for: 
+
+-----------------------------------------------
+
+● Building the website using HTML
+● Adding Bootstrap to the website
+● Adding a landing page, a navbar, a CTA button, a grid, and a footer
+● Adding a contact form for users to contact the restaurant
+● Pushing the code to the git repository
+
+
+You must use the following tools: 
+----------------------------------------------------
+
+● HTML: To define the content of the website
+● Bootstrap: To build the website
+● JavaScript: To handle events and responses
+● JQuery: To include JavaScript plugins like modals, tooltips, etc.
+
+
+Prerequisites: HTML 5, CSS and Bootstrap
+
+HTML:  HTML stands for Hyper Text  Markup Language. It is used to design web pages using a markup language. HTML is the combination of Hypertext and Markup language. Hypertext defines the link between the web pages. A markup language is used to define the text document within tag which defines the structure of web pages.
+
+CSS: Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the process of making web pages presentable. CSS allows you to apply styles to web pages. More importantly, CSS enables you to do this independent of the HTML that makes up each web page.
+
+BOOTSTRAP : Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. It is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites. Nowadays, the websites are perfect for all the browsers (IE, Firefox and Chrome) and for all sizes of screens
