@@ -1,0 +1,30 @@
+body a{ transition: 0.5s all;-webkit-transition: 0.5s all;-o-transition: 0.5s all;-moz-transition: 0.5s all;-ms-transition: 0.5s all;}
+
+#myCarousel{width:35%; margin-top:18%; margin-left:32.4%;background-color:#B22222;border:2px solid yellow;}
+#myCarousel .quote{width:70%;padding-left:15%;padding-right:15%;padding-top:2%;padding-bottom:2%;}
+
+.search-line{margin-bottom:35%;}
+.search-line h1{ text-align:center; font-size: 30px;background-color: rgba(10, 10, 10, 0.6); color:#ccc;}
+.search { border-color: #339999; height:40px; width:30%; background-color: rgba(10, 10, 10, 0.6); color: #ccc;}
+.search-line button{background: #339999; color:#ccc; height:46px; width:5%; min-width:46px;}
+
+.line{height:5px; width:100%; background-color:#339999;}
+/*--content--*/
+.content h1 {font-size: 28px; color:#ccc; margin:5%;}
+.content{float:left; position: relative; padding-left:12%; padding-right:12%; padding-bottom:5%; background-color: rgba(10, 10, 10,0.6);}
+.content-grid{float:left;width:25%;margin:0;}
+/*--------------------------------------*/
+.b-link-stripe{position:relative;display:inline-block;vertical-align:top;overflow:hidden;width: 100%;}
+.b-link-stripe .b-wrapper{position:absolute;width:100%;top:0;left:0;text-align:center;color:#ffffff;overflow:hidden;}
+/*	Animation effects*/
+.b-animate-go{text-decoration:none;}
+.b-animate{transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;
+-o-transition: all 0.5s;-webkit-transition: all 0.5s;}
+.b-animate img{display: -webkit-inline-box;}
+.b-animate span{display:block;font-size: 1.7em;padding-top: 1em;display: block;font-weight: 300;}
+.b-animate p{padding: 0.2em 0 1em;color: #fff;font-size: 1em;font-weight: 400;border-bottom:1px solid #fff;display: inline-block;margin:0 0 1em;}
+.b-animate i{background:url(../images/ar.png) no-repeat 0px 0px;width:70px;height:70px;display:block;margin:0 auto;}
+/* lt-ie9 */
+.b-animate-go:hover .b-animate{visibility:visible;}
+.b-from-left{position: relative;left:-100%;background:rgba(45, 184, 183, 0.81);background-size: 100% 100%;top: 0px;margin:0;min-height: 243px;}
+.b-animate-go:hover .b-from-left{left:0;}

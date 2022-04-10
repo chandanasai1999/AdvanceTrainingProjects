@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+.bookdetails{background-color:rgba(10, 10, 10,0.6); margin-left:20%; margin-right:20%; margin-top:5%; margin-bottom:5%;}
+.bookdetails img{padding: 2%; float:left;}
+h1{text-align:center; width:55%; margin-top:2%;background-color:rgba(10, 10, 10,0.6); margin-left:20%; padding:2%; 
+color:#fff; font-size:18px;}
+.bookdetails p {text-align:left; color:#ccc; padding: 2%; }
+.choice{padding:5%;}
+.choice a, .table a {text-align:left; color:#fff;margin: 10%; }
+.choice a:hover{color:#339999;}
+.table table{margin-left:10%; margin-right:10%; margin-top:5%; width:80%; border:3px solid #339999; background-color: black; color:#339999;}
+.table th{padding:5%; }
+
+.catButton{padding-left:2%;padding-top:2%; width:5%; height:420px; min-width:50px;position:fixed;}
+.catButton button{margin-bottom:10%; border:0; background-color:rgba(10, 10, 10,0.6); border-radius: 100px; width:100%; height:60px;
+display: inline-block; font-size: 14px; cursor: pointer; text-align: center; text-decoration: none; outline: none;}
+.catButton button:hover{background-color:black;}
+.catButton a{color:#fff;}
+
+.catable{border:2px solid #fff; background-color:rgba(10, 10, 10,0.6); min-height:400px;margin-left:20%; margin-right:20%; margin-top:2%; margin-bottom:5%;}
+.catable table{background-color:black; margin-left:10%; margin-right:10%; margin-top:5%; width:80%;color:#ccc;}
+.catable th{padding:5%; }
+.catable td{width:20%; padding-top:1%;}
+.catable a{color:#fff;}
+.catable a:hover{color:#339999;}
+
+
